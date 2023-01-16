@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+body {
+      background-color: #E2F1FF;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      font-family: 'Advent Pro', sans-serif;
+}
+
+.outerMenu {
+      background-color: #7DB0E1;
+      font-size: 2vw;
+      width: 20%;
+}
+
+button {
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      font-family: 'Advent Pro', sans-serif;
+      color: #5C7A98;
+      font-size: 1.5em;
+      font-weight: bold;
+      background: #FDF9F9;
+      padding: 10px 20px 10px 20px;
+      border: 3.5px solid #14821D;
+      margin-bottom: 2.5%;
+      cursor: pointer;
+}
+
+button:hover {
+      background: rgb(188, 214, 230);
+      text-decoration: none;
+}
+
+.innerMenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 1;
+      flex: 1;
+      text-align: center;
+}
+
+#logo {
+      height: auto;
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding-top: 5%;
+}
+
+.menuLink {
+      text-decoration: none;
+      color: #FDF9F9;
+      padding: 5%;
+}
+
+.menuLink:hover {
+      color: #D3D3D3;
+}
+
+.goalLink {
+      text-decoration: none;
+      color: #5C7A98;
+}
+
+h1 {
+      color: #7DB0E1;
+      padding: 5%;
+      font-size: 3vw;
+      margin-top: 0;
+}
+
+.content {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.25vw;
+}
+
+.goal {
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-left: 5%;
+      padding-right: 5%;
+}
+
+.outerGoal {
+      background-color: #FDF9F9;
+      margin: 5%;
+      margin-top: 0%;
+      border: solid #14821D 0.25vw;
+      border-radius: 25px;
+}
+
+.outerGoal:hover {
+      background-color: #D3D3D3;
+}
+
+.spacer {
+      min-height: 100vh;
+      background-color: #14821D;
+      width: 0.5%;
+}
+
+.sticky {
+      top: 0;
+      position: sticky;
+}
+
+p {
+      font-size: 1.5vw;
+}

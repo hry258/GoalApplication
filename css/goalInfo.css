@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap');
+
+body {
+      background-color: #E2F1FF;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      font-family: 'Advent Pro', sans-serif;
+}
+
+.outerMenu {
+      background-color: #7DB0E1;
+      font-size: 2vw;
+      width: 20%;
+      min-height: 100vh;
+}
+
+.innerMenu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 1;
+      flex: 1;
+      text-align: center;
+}
+
+#logo {
+      height: auto;
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding-top: 5%;
+}
+
+.menuLink {
+      text-decoration: none;
+      color: #FDF9F9;
+      padding: 5%;
+}
+
+.menuLink:hover {
+      color: #D3D3D3;
+}
+
+h1 {
+      color: #7DB0E1;
+      padding: 5%;
+      padding-bottom: 0;
+      font-size: 2.5vw;
+      margin: 0;
+}
+
+h2 {
+      color: #7DB0E1;
+      font-size: 1.5vw;
+      padding: 5%;
+      padding-top: 0%;
+}
+
+p {
+      color: #5C7A98;
+      font-size: 1.75vw;
+      padding-left: 5%;
+      padding-right: 5%;
+      font-weight: bold;
+      margin-top: 0%;
+}
+
+.content {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.25vw;
+}
+
+.spacer {
+      background-color: #14821D;
+      width: 0.5%;
+}
+
+.sticky {
+      top: 0;
+      position: sticky;
+}
+
+button {
+      -webkit-border-radius: 5;
+      -moz-border-radius: 5;
+      border-radius: 5px;
+      font-family: 'Advent Pro', sans-serif;
+      color: #FDF9F9;
+      font-size: 1.5em;
+      font-weight: bold;
+      background: #5C7A98;
+      padding: 10px 20px 10px 20px;
+      border: 0px;
+      text-decoration: none;
+      cursor: pointer;
+}
+    
+button:hover {
+      background: rgb(188, 214, 230);
+      text-decoration: none;
+      color: #7DB0E1;
+}
+
+.header {
+      display: flex;
+      flex-direction: row;
+      padding: 5%;
+      padding-bottom: 0%;
+      justify-content: space-between;
+}
+
+th {
+      padding-bottom: 2.5%;
+      text-align: right;
+      padding-right: 7.5%;
+}
+
+th.task {
+      padding-left: 5%;
+      text-align: left;
+}
+
+.container {
+      color:#7DB0E1;
+      font-size: 2.5vw;
+      font-weight: normal;
+      cursor: pointer;
+}
+
+#toggle {
+      cursor: pointer;
+      height: 2vw;
+      width: 2vw;
+}
+
+.bottomButtons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+}
+
+.bottom {
+      -webkit-border-radius: 28;
+      -moz-border-radius: 28;
+      border-radius: 28px;
+      margin-bottom: 25%;
+      margin-top: 5%;
+}

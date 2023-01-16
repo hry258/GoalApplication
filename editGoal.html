@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <link rel="stylesheet" href="css\signUp.css">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Edit goal</title>
+
+            <style>
+                  #flexEven {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-evenly;
+                        margin-top: 2%;
+                        margin-bottom: 5%;
+                  }
+            </style>
+      </head>
+      <body>
+            <div>
+                  <a href="goalInfo.html" style="padding-left: 5%;"><button type="button" style="border-radius: 5px;">Cancel</button></a>
+                  <center>
+                  <h1 style="margin-bottom: 0;">Edit goal</h1>
+                  </center>
+                  <form>
+                        <label for="name" id="labels">Name</label>
+                        <center>
+                              <input type="text" id="textBox" value="Goal name">
+                        </center>
+                        <label for="description" id="labels">Description</label>
+                        <center>
+                              <input type="text" name="description" id="textBox" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                        </center>
+                        <label for="dueDate" id="labels">Due date</label>
+                        <center>
+                              <input type="date" name="dueDate" id="textBox">
+                        </center>
+                        <div id="flexEven">
+                              <a href="goalInfo.html"><button type="button">CONFIRM</button></a>
+                              <a href="goals.html"><button type="button">DELETE</button></a>
+                        </div>
+                  </form>
+            </div>
+      </body>
+</html>
