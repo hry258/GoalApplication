@@ -22,21 +22,22 @@
                   <center>
                   <h1 style="margin-bottom: 0;">Edit goal</h1>
                   </center>
-                  <form>
+                  <form action="goalInfo.html">
                         <label for="name" id="labels">Name</label>
                         <center>
-                              <input type="text" id="textBox" value="Goal name">
+                              <input type="text" id="textBox" value="Goal name" required>
                         </center>
                         <label for="description" id="labels">Description</label>
                         <center>
-                              <input type="text" name="description" id="textBox" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                              <input type="text" name="description" id="textBox" 
+                              value="Lorem ipsum dolor sit amet, consectetur adipiscing elit" required>
                         </center>
                         <label for="dueDate" id="labels">Due date</label>
                         <center>
-                              <input type="date" name="dueDate" id="textBox">
+                              <input type="date" name="dueDate" id="textBox" required>
                         </center>
                         <div id="flexEven">
-                              <a href="goalInfo.html"><button type="button">CONFIRM</button></a>
+                              <a><button type="submit">CONFIRM</button></a>
                               <a href="goals.html"><button type="button">DELETE</button></a>
                         </div>
                   </form>

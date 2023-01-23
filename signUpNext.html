@@ -12,14 +12,14 @@
                 <p id = "title">Personal info</p>
             </center>
             
-            <form id="form">
+            <form id="form" action="accountCreatedSuccessfully.html">
                 <label for = "name" id="labels">Name</label> <br>
                 <center>
-                    <input name = "name" type = "text" id="textBox"><br>
+                    <input name = "name" type = "text" id="textBox" required><br>
                 </center>
                 <label for = "contry" id="labels">Country</label> <br>
                 <center>
-                    <input name = "country" type = "text" id="textBox"><br>
+                    <input name = "country" type = "text" id="textBox" required><br>
                 </center>
                 <label id="labels" for="type" style="padding-right: 5%;">Select language:</label>
                 <select>
@@ -31,7 +31,7 @@
                       <option value="5">French</option>
                 </select>
                 <center style="padding-top: 2.5%;">
-                    <a href="accountCreatedSuccessfully.html"><button type="button">SIGN UP</button>
+                    <button type="submit">SIGN UP</button>
                 </center>
             </form>
         </div>

@@ -97,3 +97,15 @@ select {
     border: none;
     border-radius: 5px;
 }
+
+#textBox:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95.5% 50% #FDF9F9;
+    background-size: 25px;
+    outline: 3px solid #14821D;
+}
+
+#textBox:required:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95.5% 50% #FDF9F9;
+    background-size: 25px;
+    outline: 3px solid red; 
+}

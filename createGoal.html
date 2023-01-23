@@ -11,21 +11,22 @@
             <center>
                   <h1>Create goal</h1>
             </center>
-            <form>
+            <form action="goals.html">
                   <label for="name" id="labels">Name</label>
                   <center>
-                        <input type="text" name="name" id="textBox">
+                        <input type="text" name="name" id="textBox" required>
                   </center>
                   <label for="description" id="labels">Description</label>
                   <center>
-                        <input type="text" name="description" id="textBox">
+                        <input type="text" name="description" id="textBox" required>
                   </center>
                   <label for="dueDate" id="labels">Due date</label>
                   <center>
-                        <input type="date" name="dueDate" id="textBox">
+                        <input type="date" name="dueDate" id="textBox" required
+                        style="background-image: none;">
                   </center>
                   <center style="padding-top: 2.5%;">
-                        <a href="goals.html"><button type="button">CREATE</button></a>
+                        <button type="submit">CREATE</button>
                   </center>
             </form>
         </div>

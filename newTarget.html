@@ -9,20 +9,20 @@
     <body>
         <div>
             <h1 style="text-align:center;">Add target</h1>
-            <form>
+            <form action="goalInfo.html">
                   <label id="labels" for="name" style="font-size: 2vw; padding-bottom: 50%;">Target name:</label>
                   <center>
-                        <input id="textBox" name="name" type="text">
+                        <input id="textBox" name="name" type="text" required>
                   </center>
                   <label id="labels" for="type" style="font-size: 2vw; padding-right: 5%;">Target type</label>
-                        <select>
-                              <option value="0">Select type</option>
+                        <select required>
+                              <option value="">Select type</option>
                               <option value="1">Numeric</option>
                               <option value="2">Checkbox</option>
                               <option value="3">Monetary</option>
                         </select>
                   <center style="padding-top:2.5%;">
-                        <a href = "goalInfo.html" style="padding-right: 2.5%;"><button type = "button">SUBMIT</button></a>
+                        <a style="padding-right: 2.5%;"><button type = "submit">SUBMIT</button></a>
                         <a href = "goalInfo.html" style="padding-left: 2.5%;"><button type = "button">CANCEL</button></a>
                   </center>
             </form>

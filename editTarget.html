@@ -22,19 +22,21 @@
                   <center>
                   <h1 style="margin-bottom: 0;">Edit target</h1>
                   </center>
-                  <form>
+                  <form action="goalInfo.html">
                         <label for="name" id="labels">Target name</label>
                         <center>
-                              <input type="text" id="textBox" value="Drink glasses of water">
+                              <input type="text" id="textBox" value="Drink glasses of water" required>
                         </center>
                         <div id="flexEven">
                               <label for="currentValue" id="labels" style="padding-left: 0;">Current value:</label>
-                              <input type="number" name="currentValue" id="textBox" value="5" style="width: 10%;">
+                              <input type="number" name="currentValue" id="textBox" value="5" 
+                              style="width: 10%; background-image: none;" required>
                               <label for="targetValue" id="labels" style="padding-left: 0;">Target value:</label>
-                              <input type="number" name="dueDate" id="textBox" value="8" style="width: 10%;">
+                              <input type="number" name="dueDate" id="textBox" value="8" 
+                              style="width: 10%; background-image: none;" required>
                         </div>                        
                         <div id="flexEven">
-                              <a href="goalInfo.html"><button type="button">CONFIRM</button></a>
+                              <a><button type="submit">CONFIRM</button></a>
                               <a href="goalInfo.html"><button type="button">DELETE</button></a>
                         </div>
                   </form>
