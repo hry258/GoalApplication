@@ -5,29 +5,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>New goal</title>
-  </head>
+    </head>
     <body>
         <div>
             <center>
-                  <h1>Create goal</h1>
+                <h1>Create goal</h1>
             </center>
-            <form action="goals.html">
-                  <label for="name" id="labels">Name</label>
-                  <center>
-                        <input type="text" name="name" id="textBox" required>
-                  </center>
-                  <label for="description" id="labels">Description</label>
-                  <center>
-                        <input type="text" name="description" id="textBox" required>
-                  </center>
-                  <label for="dueDate" id="labels">Due date</label>
-                  <center>
-                        <input type="date" name="dueDate" id="textBox" required
-                        style="background-image: none;">
-                  </center>
-                  <center style="padding-top: 2.5%;">
-                        <button type="submit">CREATE</button>
-                  </center>
+            <form action="goals.html" id="signUp-form">
+                <div class="form-section">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" class="textBox" required>
+                </div>
+                <div class="form-section">
+                    <label for="Description">Description</label>
+                    <input type="text" name="Description" class="textBox" required>
+                </div>
+                <div class="form-section">
+                    <label for="dueDate">Due date</label>
+                    <input type="date" name="dueDate" class="textBox" required style="background-image: none;">
+                </div>
+                <button type="submit" style="margin: 5%;">CREATE</button>
             </form>
         </div>
     </body>

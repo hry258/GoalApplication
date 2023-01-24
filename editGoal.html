@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <link rel="stylesheet" href="css\signUp.css">
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Edit goal</title>
+    <head>
+        <link rel="stylesheet" href="css\signUp.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit goal</title>
 
-            <style>
-                  #flexEven {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-evenly;
-                        margin-top: 2%;
-                        margin-bottom: 5%;
-                  }
-            </style>
-      </head>
-      <body>
-            <div>
-                  <a href="goalInfo.html" style="padding-left: 5%;"><button type="button" style="border-radius: 5px;">Cancel</button></a>
-                  <center>
-                  <h1 style="margin-bottom: 0;">Edit goal</h1>
-                  </center>
-                  <form action="goalInfo.html">
-                        <label for="name" id="labels">Name</label>
-                        <center>
-                              <input type="text" id="textBox" value="Goal name" required>
-                        </center>
-                        <label for="description" id="labels">Description</label>
-                        <center>
-                              <input type="text" name="description" id="textBox" 
-                              value="Lorem ipsum dolor sit amet, consectetur adipiscing elit" required>
-                        </center>
-                        <label for="dueDate" id="labels">Due date</label>
-                        <center>
-                              <input type="date" name="dueDate" id="textBox" required
-                              style="background-image: none;">
-                        </center>
-                        <div id="flexEven">
-                              <a><button type="submit">CONFIRM</button></a>
-                              <a href="goals.html"><button type="button">DELETE</button></a>
-                        </div>
-                  </form>
-            </div>
-      </body>
+        <style>
+            #flexEven {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 2%;
+                margin-bottom: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="goalInfo.html" style="padding-left: 5%;"><button type="button" style="border-radius: 5px;">Cancel</button></a>
+            <center>
+                <h1 style="margin-bottom: 0;">Edit goal</h1>
+            </center>
+            <form action="goalInfo.html" id="signUp-form">
+                <div class="form-section">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" value="Goal name" class="textBox" required>
+                </div>
+                <div class="form-section">
+                    <label for="Description">Description</label>
+                    <input name="Description" type="text" required class="textBox" 
+                    value="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                </div>
+                <div class="form-section">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" name="dueDate" class="textBox" required
+                    style="background-image: none;">
+                </div>
+                <div id="flexEven">
+                        <a><button type="submit">CONFIRM</button></a>
+                        <a href="goals.html"><button type="button">DELETE</button></a>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>

@@ -24,12 +24,6 @@ div {
     border-radius: 10px;
 }
 
-#b {
-    color: #FDF9F9;;
-    font-size: 50%;
-    padding-left: 56%;
-}
-
 button {
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
@@ -91,7 +85,7 @@ p {
 
 select {
     color:#5C7A98;
-    width: 17.5%;
+    width: 30%;
     font-size: 1.5vw;
     border: none;
     border-radius: 5px;
@@ -157,5 +151,6 @@ form {
 }
 
 .form-section {
-    margin-top: 2.5%;
+    margin-top: 2%;
+    padding-top: 0;
 }

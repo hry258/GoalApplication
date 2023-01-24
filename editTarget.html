@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-            <link rel="stylesheet" href="css\signUp.css">
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Edit target</title>
+    <head>
+        <link rel="stylesheet" href="css\signUp.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit target</title>
 
-            <style>
-                  #flexEven {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-evenly;
-                        margin-top: 2%;
-                        margin-bottom: 5%;
-                  }
-            </style>
-      </head>
-      <body>
-            <div>
-                  <a href="goalInfo.html" style="padding-left: 5%;"><button type="button" style="border-radius: 5px;">Cancel</button></a>
-                  <center>
-                  <h1 style="margin-bottom: 0;">Edit target</h1>
-                  </center>
-                  <form action="goalInfo.html">
-                        <label for="name" id="labels">Target name</label>
-                        <center>
-                              <input type="text" id="textBox" value="Drink glasses of water" required>
-                        </center>
-                        <div id="flexEven">
-                              <label for="currentValue" id="labels" style="padding-left: 0;">Current value:</label>
-                              <input type="number" name="currentValue" id="textBox" value="5" 
-                              style="width: 10%; background-image: none;" required>
-                              <label for="targetValue" id="labels" style="padding-left: 0;">Target value:</label>
-                              <input type="number" name="dueDate" id="textBox" value="8" 
-                              style="width: 10%; background-image: none;" required>
-                        </div>                        
-                        <div id="flexEven">
-                              <a><button type="submit">CONFIRM</button></a>
-                              <a href="goalInfo.html"><button type="button">DELETE</button></a>
-                        </div>
-                  </form>
-            </div>
-      </body>
+        <style>
+            #flexEven {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                margin-top: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <a href="goalInfo.html" style="padding-left: 5%;"><button type="button" style="border-radius: 5px;">Cancel</button></a>
+            <center>
+            <h1 style="margin-bottom: 0;">Edit target</h1>
+            </center>
+            <form action="goalInfo.html" id="signUp-form">
+                <div class="form-section">
+                    <label for="Name">Target name</label>
+                    <input name="Name" type="text" class="textBox" required value="Drink glasses of water"/>
+                    <p class="message"></p>
+                </div>                
+                <div id="flexEven" class="form-section">
+                        <label for="currentValue" style="padding-left: 0;">Current value:</label>
+                        <input type="number" name="currentValue" class="textBox" value="5" 
+                        style="width: 10%; background-image: none;" required>
+                        <label for="targetValue" style="padding-left: 0;">Target value:</label>
+                        <input type="number" name="dueDate" class="textBox" value="8" 
+                        style="width: 10%; background-image: none;" required>
+                </div>                        
+                <div id="flexEven" style="padding-bottom: 5%;">
+                        <a><button type="submit">CONFIRM</button></a>
+                        <a href="goalInfo.html"><button type="button">DELETE</button></a>
+                </div>
+            </form>
+        </div>
+    </body>
 </html>

@@ -5,6 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sign up</title>
+        <style>
+            #flexSelect {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        </style>
     </head>
     <body>
         <div>
@@ -12,28 +19,33 @@
                 <p id = "title">Personal info</p>
             </center>
             
-            <form id="form" action="accountCreatedSuccessfully.html">
-                <label for="name" id="labels">Name</label> <br>
-                <center>
-                    <input name="name" type="text" id="textBox" required pattern="[A-Z][a-z]+(\s[A-Z][a-z]+)*"><br>
-                </center>
-                <label for = "contry" id="labels">Country</label> <br>
-                <center>
-                    <input name = "country" type = "text" id="textBox" required pattern="[A-Z][a-z]+"><br>
-                </center>
-                <label id="labels" for="type" style="padding-right: 5%;">Select language:</label>
-                <select>
-                      <option value="0">English</option>
-                      <option value="1">Dutch</option>
-                      <option value="2">Romanian</option>
-                      <option value="3">Spanish</option>
-                      <option value="4">German</option>
-                      <option value="5">French</option>
-                </select>
-                <center style="padding-top: 2.5%;">
+            <form id="signUp-form" action="accountCreatedSuccessfully.html">
+                <div class="form-section">
+                    <label for="Name">Name</label>
+                    <input name="Name" type="text" class="textBox" required>
+                    <p class="message"></p>
+                </div>
+                <div class="form-section">
+                    <label for="Country">Country</label>
+                    <input name="Country" type="text" class="textBox" required>
+                    <p class="message"></p>
+                </div>
+                <div class="form-section" id="flexSelect">
+                    <label for="type" id="languageLabel">Select language:</label>
+                    <select id="select">
+                        <option value="0">English</option>
+                        <option value="1">Dutch</option>
+                        <option value="2">Romanian</option>
+                        <option value="3">Spanish</option>
+                        <option value="4">German</option>
+                        <option value="5">French</option>
+                    </select>
+                </div> 
+                <center style="padding-top: 2.5%; padding-bottom: 2.5%;">
                     <button type="submit">SIGN UP</button>
                 </center>
             </form>
         </div>
+        <script src="js/signUp.js"></script>
     </body>
 </html>

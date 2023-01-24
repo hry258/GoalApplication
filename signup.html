@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="css\signUp.css"/>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>
-  </head>
-  <body>
-    <div style="margin-top: 2.5%;">
-      <center>
-        <h1>Create account</h1>
-      </center>
-      <form action="signUpNext.html" id="signUp-form">
-        <div class="form-section">
-          <label for="Email">Email</label>
-          <input name="Email" type="email" class="textBox"/>
-          <p class="message"></p>
+    <head>
+        <link rel="stylesheet" href="css\signUp.css"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up</title>
+    </head>
+    <body>
+        <div style="margin-top: 2%;">
+            <center>
+                <h1>Create account</h1>
+            </center>
+            <form action="signUpNext.html" id="signUp-form">
+                <div class="form-section">
+                    <label for="Email">Email</label>
+                    <input name="Email" type="email" class="textBox" required/>
+                    <p class="message"></p>
+                </div>
+                
+                <div class="form-section">
+                    <label for="Username">Username</label>
+                    <input name="Username" type="text" class="textBox" style="margin-bottom: 0;" required/>
+                    <p class="message"></p>
+                    <p style="font-size: 40%; margin: 1%; padding-left: 0;">
+                        Username must be between 5 and 12 characters, must start with a capital letter 
+                        and end with a special character or number.
+                    </p>
+                </div>
+
+                <div class="form-section">
+                    <label for="password">Password</label>
+                    <input name="password" type="password" class="textBox" style="margin: 0;" required/>
+                    <p class="message"></p>
+                    <p style="font-size: 40%; margin: 1%; padding-left: 0;">
+                        Password should have at least 12 characters. It needs to be a combination of
+                        uppercase letters, lowercase letters, numbers, and symbols.
+                    </p>
+                </div>
+
+                <div class="form-section">
+                    <label for="password confirmation">Confirm password</label>
+                    <input name="password confirmation" type="password" class="textBox" required/>
+                    <p class="message"></p>
+                </div>
+
+                <center>
+                    <button type="submit" name="submitBtn" id="submitBtn">NEXT</button>
+                </center>
+            </form>
         </div>
-
-        <div class="form-section">
-          <label for="Username">Username</label>
-          <input name="Username" type="text" class="textBox" style="margin-bottom: 0;"/>
-          <p class="message"></p>
-        </div>
-
-        <div class="form-section">
-          <label for="password">Password</label>
-          <input name="password" type="password" class="textBox" style="margin: 0;"/>
-          <p class="message"></p>
-        </div>
-
-        <div class="form-section">
-          <label for="password confirmation">Confirm password</label>
-          <input name="password confirmation" type="password" class="textBox"/>
-          <p class="message"></p>
-        </div>
-
-        <center>
-          <button type="submit" name="submitBtn" id="submitBtn">NEXT</button>
-        </center>
-      </form>
-    </div>
-
-    <script src="js/signUp.js"></script>
-  </body>
+        <script src="js/signUp.js"></script>
+    </body>
 </html>

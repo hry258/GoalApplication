@@ -7,9 +7,10 @@ inputElements.forEach((input) => {
 });
 
 form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-  inputElements.forEach((input) => validateInput(input));
+    inputElements.forEach((input) => validateInput(input));
 });
+
+// VALIDATE INPUT -----------------------------------------------------
 
 function validateFormFields(fieldName, value) {
     if (!value) return `${fieldName} should not be empty!`;
@@ -45,6 +46,22 @@ function validateFormFields(fieldName, value) {
             }
             else {
                 return "Password is not valid!";
+            }
+        }
+        case "Name": {
+            if (/[A-Z][a-z]+(\s[A-Z][a-z]+)*/.test(value)) {
+                return feedbackGood;
+            }
+            else {
+                return "Name is not valid!";
+            }
+        }
+        case "Country": {
+            if (/[A-Z][a-z]+/.test(value)) {
+                return feedbackGood;
+            }
+            else {
+                return "Country is not valid!";
             }
         }
         default: {

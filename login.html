@@ -11,17 +11,16 @@
             <center>
                 <img src="Resources/logo.png" alt="Logo" id="logoImage">
             </center>
-            <form action="account.html">
-                <label for = "Email" id="labels">Email</label>
-                <center>
-                    <input name = "Email" type = "email" id="textBox" 
-                    required pattern="[a-zA-Z]+([^a-zA-Z\s\d][a-zA-Z]+)*@[a-zA-Z]+\.[a-zA-Z]+">
-                </center>
-                <label for = "pwd" id="labels">Password</label>
-                <center>
-                    <input name = "pwd" type = "password" id="textBox" style="margin-bottom: 0;" required>
-                </center>
-                <a href = "forgotPassword.html" id = "b">Forgot password</a>
+            <form action="account.html" id="signUp-form">
+                <div class="form-section">
+                    <label for="Email">Email</label>
+                    <input name="Email" type="email" class="textBox" required>
+                </div>
+                <div class="form-section">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="textBox" required>
+                    <a href="forgotPassword.html" style="color:#FDF9F9; font-size:50%; float:right;">Forgot password</a>
+                </div>
                 <center>
                     <button type="submit" style="margin-top: 5%;">LOG IN</button>
                     <p style="margin-top: 0; padding-bottom: 2.5%;">Don't have an account?  <a href="signup.html" style="color: #FDF9F9;">Sign up</a></p>
