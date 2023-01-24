@@ -7,13 +7,28 @@ inputElements.forEach((input) => {
 });
 
 form.addEventListener("submit", (e) => {
-    inputElements.forEach((input) => validateInput(input));
+    let formIsCorrect = true;
+    inputElements.forEach((input) => {
+        if (!validateFinal(input)) {
+            formIsCorrect = false;
+        }
+    })
+    if (!formIsCorrect) {
+        window.alert("Some of the fields have invalid input!");
+        e.preventDefault();
+    }
 });
 
-// VALIDATE INPUT -----------------------------------------------------
+function validateFinal(input) {
+    const feedback = validateFormFields(input.name, input.value);
+    if (feedback == feedbackGood) {
+        return true;
+    }
+    return false;
+}
 
 function validateFormFields(fieldName, value) {
-    if (!value) return `${fieldName} should not be empty!`;
+    if (!value) return `${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)} should not be empty!`;
 
     switch (fieldName) {
         case "Email": {
