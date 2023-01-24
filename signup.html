@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="css\signUp.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign up</title>
+  <head>
+    <link rel="stylesheet" href="css\signUp.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
   </head>
-    <body>
-        <div style="margin-top:2.5%;">
-            <center>
-                <h1>Create account</h1>
-            </center>
-            <form action="signUpNext.html">
-                  <label for="Email" id="labels">Email</label><br>
-                  <center>
-                        <input name="Email" type="email" id="textBox" 
-                        required pattern="[a-zA-Z]+([^a-zA-Z\s\d][a-zA-Z]+)*@[a-zA-Z]+\.[a-zA-Z]+"><br>
-                  </center>   
-                  <label for="uname" id="labels">Username</label><br>
-                  <center>
-                        <input name="uname" type="text" id="textBox" 
-                        required minlength="5" maxlength="12"
-                        style="margin-bottom:0;" pattern="[A-Z]+.*[\W|\d]+"><br>
-                  </center>
-                  <p style="font-size:40%; padding-right:26%; padding-left:26%; margin-bottom:0;">
-                        Username must have between 5 and 12 characters,
-                        start with a capital letter and end
-                        with a number or special character
-                  </p>
-                  <label for="pwd" id="labels">Password</label><br>
-                  <center>
-                        <input name="pwd" type="password" id="textBox" 
-                        required minlength="12" style="margin:0;"><br>
-                  </center>
-                  <p style="font-size:40%; padding-right:26%; padding-left:26%; margin-bottom:0;">
-                        Password needs to be at least 12 characters long.
-                        It need to be a combination of uppercase letters, 
-                        lowercase letters, numbers, and symbols.
-                  </p>
-                  <label for="cpwd" id="labels">Confirm password</label><br>
-                  <center>
-                        <input name="cpwd" type="password" id="textBox" 
-                        required minlength="12"><br>
-                  </center>
-                  <center>
-                        <button type="submit">NEXT</button>
-                  </center>                
-            </form>
+  <body>
+    <div style="margin-top: 2.5%;">
+      <center>
+        <h1>Create account</h1>
+      </center>
+      <form action="signUpNext.html" id="signUp-form">
+        <div class="form-section">
+          <label for="Email">Email</label>
+          <input name="Email" type="email" class="textBox"/>
+          <p class="message"></p>
         </div>
-    </body>
+
+        <div class="form-section">
+          <label for="Username">Username</label>
+          <input name="Username" type="text" class="textBox" style="margin-bottom: 0;"/>
+          <p class="message"></p>
+        </div>
+
+        <div class="form-section">
+          <label for="password">Password</label>
+          <input name="password" type="password" class="textBox" style="margin: 0;"/>
+          <p class="message"></p>
+        </div>
+
+        <div class="form-section">
+          <label for="password confirmation">Confirm password</label>
+          <input name="password confirmation" type="password" class="textBox"/>
+          <p class="message"></p>
+        </div>
+
+        <center>
+          <button type="submit" name="submitBtn" id="submitBtn">NEXT</button>
+        </center>
+      </form>
+    </div>
+
+    <script src="js/signUp.js"></script>
+  </body>
 </html>

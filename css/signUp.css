@@ -57,14 +57,13 @@ button:hover {
     justify-content: center;
 }
 
-#textBox {
+.textBox {
     background-color: #FDF9F9;
     color: black;
     border-radius: 5px;
     border: 0;
     width: 49%;
     font-size: smaller;
-    margin-bottom: 2.5%;
 }
 
 #labels {
@@ -98,14 +97,65 @@ select {
     border-radius: 5px;
 }
 
-#textBox:required:focus:valid {
+.validInputBorder {
     background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95.5% 50% #FDF9F9;
     background-size: 25px;
-    outline: 3px solid #14821D;
+    outline: 3px solid #14821D;   
 }
 
-#textBox:required:focus:invalid {
+.invalidInputBorder {
     background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95.5% 50% #FDF9F9;
     background-size: 25px;
     outline: 3px solid red; 
+}
+
+.valid, .invalid, .instructions{
+    display: none;
+    font-size: 40%;
+    padding-right: 26%; 
+    padding-left: 26%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.invalid {
+    color: red;
+}
+
+.valid {
+    color: #14821D;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section input {
+    width: 100%;
+}
+
+.form-section label {
+    display: block;
+    color: #fdf9f9;
+    font-size: 60%;
+}
+
+.form-section .message {
+    display: none;
+}
+
+.form-section .message.show {
+    display: block;
+}
+
+.message {
+    margin: 0;
+    padding: 0;
+}
+
+.form-section {
+    margin-top: 2.5%;
 }
