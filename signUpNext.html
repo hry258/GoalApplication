@@ -13,13 +13,13 @@
             </center>
             
             <form id="form" action="accountCreatedSuccessfully.html">
-                <label for = "name" id="labels">Name</label> <br>
+                <label for="name" id="labels">Name</label> <br>
                 <center>
-                    <input name = "name" type = "text" id="textBox" required><br>
+                    <input name="name" type="text" id="textBox" required pattern="[A-Z][a-z]+(\s[A-Z][a-z]+)*"><br>
                 </center>
                 <label for = "contry" id="labels">Country</label> <br>
                 <center>
-                    <input name = "country" type = "text" id="textBox" required><br>
+                    <input name = "country" type = "text" id="textBox" required pattern="[A-Z][a-z]+"><br>
                 </center>
                 <label id="labels" for="type" style="padding-right: 5%;">Select language:</label>
                 <select>
