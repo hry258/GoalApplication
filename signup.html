@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
     <head>
         <link rel="stylesheet" href="css\signUp.css"/>
         <meta charset="UTF-8"/>
@@ -7,7 +7,7 @@
         <title>Sign up</title>
     </head>
     <body>
-        <div style="margin-top: 2%;">
+        <div style="margin-top: 2%; margin-bottom: 5%;">
             <center>
                 <h1>Create account</h1>
             </center>
@@ -44,11 +44,75 @@
                     <p class="message"></p>
                 </div>
 
+                <div class="form-section">
+                    <label for="Name">Name</label>
+                    <input name="Name" type="text" class="textBox" required>
+                    <p class="message"></p>
+                </div>
+
+                <div class="form-section">
+                    <label for="Country">Country</label>
+                    <input name="Country" type="text" class="textBox" required>
+                    <p class="message"></p>
+                </div>
+
+                <div class="form-section" id="flexSelect">
+                    <label for="type" id="languageLabel">Select language:</label>
+                    <select id="select">
+                        <option value="0">English</option>
+                        <option value="1">Dutch</option>
+                        <option value="2">Romanian</option>
+                        <option value="3">Spanish</option>
+                        <option value="4">German</option>
+                        <option value="5">French</option>
+                    </select>
+                </div> 
+
                 <center>
-                    <button type="submit" name="submitBtn" id="submitBtn">NEXT</button>
+                    <button type="submit" name="submitBtn" id="submitBtn">SIGN UP</button>
                 </center>
             </form>
+            <div class="form-section">
+                <p class="message" id="meta"></p>
+            </div>
         </div>
+        <script>
+            const hiddenParagraph = document.getElementById("meta");
+            const submitBtn = document.getElementById("submitBtn");
+            const formular = document.getElementById("signUp-form");
+            const page = document.getElementById("html");
+            const inputs = formular.querySelectorAll(".form-section input");
+            let mouseClicks = 0;
+            let keyPresses = 0;
+            const now = new Date();
+            
+            submitBtn.addEventListener("click", (e) => {
+                var timeSpent = new Date(new Date() - now).toUTCString();
+                timeSpent = timeSpent.slice(16, 25);
+                
+                let characters = 0;
+                inputs.forEach((i) => {
+                    characters += i.value.length;
+                })
+
+                let message = `Number of mouse clicks: ${mouseClicks}<br/>
+                                Total time spent: ${timeSpent}<br/>
+                                Total key presses: ${keyPresses}<br/>
+                                Total number of characters typed: ${characters}<br/>
+                                Press SIGN UP again to continue<br/>`;
+
+                hiddenParagraph.classList.add("show");
+                hiddenParagraph.innerHTML = message;
+            })
+
+            page.addEventListener("click", () => {
+                mouseClicks++;
+            })
+            formular.addEventListener("input", () => {
+                keyPresses++;
+            })
+
+        </script>
         <script src="js/signUp.js"></script>
     </body>
 </html>

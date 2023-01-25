@@ -25,9 +25,11 @@ form.addEventListener("submit", (e) => {
     })
     if (formIsCorrect && password != null && confirmation != null && password != confirmation) {
         window.alert("Passwords do not match!");
+        e.preventDefault();
     }
     else if (!formIsCorrect) {
         window.alert("Some of the fields have invalid input!");
+        e.preventDefault();
     }
     else {
         let message = "";
@@ -36,7 +38,6 @@ form.addEventListener("submit", (e) => {
         })
         window.alert(message);
     }
-    e.preventDefault();
 });
 
 function validateFinal(input) {
@@ -51,22 +52,6 @@ function validateFormFields(fieldName, value) {
     if (!value) return `${fieldName.charAt(0).toUpperCase() + fieldName.slice(1)} should not be empty!`;
 
     switch (fieldName) {
-        case "Email": {
-            if (/[a-zA-Z]+([^a-zA-Z\s\d][a-zA-Z]+)*@[a-zA-Z]+\.[a-zA-Z]+/.test(value)) {
-                return feedbackGood;
-            }
-            else {
-                return "Email is not valid!";
-            }
-        }
-        case "Username": {
-            if (/[A-Z]+.*[\W|\d]+/.test(value) && /^\S*$/.test(value)) {
-                return feedbackGood;
-            }
-            else {
-                return "Username is not valid!";
-            }
-        }
         case "password": {
             if (/(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W)/.test(value) && value.length >= 12) {
                 return feedbackGood;
@@ -81,22 +66,6 @@ function validateFormFields(fieldName, value) {
             }
             else {
                 return "Password is not valid!";
-            }
-        }
-        case "Name": {
-            if (/[A-Z][a-z]+(\s[A-Z][a-z]+)*/.test(value)) {
-                return feedbackGood;
-            }
-            else {
-                return "Name is not valid!";
-            }
-        }
-        case "Country": {
-            if (/[A-Z][a-z]+/.test(value)) {
-                return feedbackGood;
-            }
-            else {
-                return "Country is not valid!";
             }
         }
         default: {
